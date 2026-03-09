@@ -1,5 +1,35 @@
 # CheckPermisos
 
+An interactive Bash script designed for quick security auditing of Linux system permissions.
+
+## Description
+This tool identifies insecure permission configurations that could be exploited for unauthorized access or privilege escalation in a Linux environment. It focuses on critical areas such as global write permissions and SUID binaries.
+
+## Features
+* Home Directory Audit: Scans for files with global permissions (777).
+* Privilege Escalation Detection: Detects binaries with the SUID bit active.
+* User Security Configuration: Verifies if the umask value is secure and allows for modification.
+* Visual Interface: Results are categorized by colors to facilitate quick identification of risks.
+
+## Requirements
+* Linux-based operating system (Tested on Parrot OS and Debian).
+* Bash command interpreter.
+
+## Installation and Usage
+1. Clone the repository to your local machine.
+2. Grant execution permissions to the script:
+   ```bash
+   chmod +x check_perm.sh
+   ```
+3. Run the tool:
+   ```bash
+   ./check_perm.sh
+   ```
+---
+
+
+## Spanish Version
+
 Script interactivo en Bash para realizar una auditoria rapida de seguridad sobre los permisos del sistema Linux.
 
 ## Descripcion
